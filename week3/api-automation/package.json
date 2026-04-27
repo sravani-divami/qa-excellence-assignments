@@ -1,0 +1,23 @@
+{
+  "name": "shopeasy-api-tests",
+  "version": "1.0.0",
+  "description": "Playwright API automation tests for ShopEasy E-Commerce API",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/api/shopeasy/auth.spec.ts",
+    "test:products": "playwright test tests/api/shopeasy/products.spec.ts",
+    "test:cart": "playwright test tests/api/shopeasy/cart.spec.ts",
+    "test:orders": "playwright test tests/api/shopeasy/orders.spec.ts",
+    "test:payments": "playwright test tests/api/shopeasy/payments.spec.ts",
+    "test:integration": "playwright test tests/api/shopeasy/integration.spec.ts",
+    "test:system": "playwright test tests/api/shopeasy/system.spec.ts",
+    "test:report": "playwright show-report ../reports/api-automation-report",
+    "allure:generate": "allure generate allure-results --clean -o ../reports/api-automation-allure-report",
+    "allure:open": "allure open ../reports/api-automation-allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-playwright": "^3.7.1",
+    "typescript": "^5.4.0"
+  }
+}

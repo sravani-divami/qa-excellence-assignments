@@ -1,0 +1,20 @@
+{
+  "name": "petstore-api-tests",
+  "version": "1.0.0",
+  "description": "Playwright API automation tests for Swagger Petstore API",
+  "scripts": {
+    "test": "playwright test",
+    "test:pet": "playwright test tests/api/petstore/pet.spec.ts",
+    "test:store": "playwright test tests/api/petstore/store.spec.ts",
+    "test:user": "playwright test tests/api/petstore/user.spec.ts",
+    "test:integration": "playwright test tests/api/petstore/integration.spec.ts",
+    "test:report": "playwright show-report ../reports/api-automation-report",
+    "allure:generate": "allure generate allure-results --clean -o ../reports/api-automation-allure-report",
+    "allure:open": "allure open ../reports/api-automation-allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "allure-playwright": "^3.7.1",
+    "typescript": "^5.4.0"
+  }
+}

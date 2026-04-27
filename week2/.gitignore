@@ -1,0 +1,4 @@
+test-results/
+.github/skills/
+.env
+node_modules/
